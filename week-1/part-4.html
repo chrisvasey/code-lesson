@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Week 1 | Code Squad</title>
+
+	<!-- Bootstrap CSS (how I get the nice styles out of the box) -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- Link to our CSS -->
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+	<div class="d-flex" id="wrapper">
+
+		<!-- Sidebar -->
+		<div class="bg-light border-right" id="sidebar-wrapper">
+			<div class="list-group list-group-flush">
+				<a href="index.html" class="list-group-item list-group-item-action bg-light">1. Running JavaScript</a>
+				<a href="part-2.html" class="list-group-item list-group-item-action bg-light">2. Diving into
+					variables</a>
+				<a href="part-3.html" class="list-group-item list-group-item-action bg-light">3. Maths (Arithmetic Operators)</a>
+				<a href="part-4.html" class="list-group-item list-group-item-action bg-light">4. Conditionals and Comparison</a>
+				<a href="part-5.html" class="list-group-item list-group-item-action bg-light">5. Barely functioning</a>
+				<a href="part-6.html" class="list-group-item list-group-item-action bg-light">6. Higher or lower</a>
+				<a href="part-7.html" class="list-group-item list-group-item-action bg-light">7. Fizz Buzz</a>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom header-nav">
+				<h3>Week 1 - Part 4: Conditionals and Comparison</h3>
+			</nav>
+
+
+			<div class="container-fluid">
+				<h4 class="mt-4">Conditionals (If Statements)</h4>
+				<p>
+					Most people may have come across conditonals before, they are methods for deciding when code should run or not. <br>
+					The most basic and widely used conditonal is an "If" statement, you may have used these before in programs like Excel. <br>
+					If statements check to see if something is equal to "true" and then runs the code.
+					In JavaScript they look like this: <br>
+					<code>
+						var friend = true; <br>
+						if(friend){ <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;console.log("Not foe!"); <br>
+						}
+					</code> <br>
+					You can also handle what to do when an IF statement isn't going to run using "else" <br>
+					<code>
+						var admin = false; <br>
+						if(admin){ <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;//Give them access <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;accessMainframe(); <br>
+						} else { <br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//Banned! <br>
+							&nbsp;&nbsp;&nbsp;&nbsp;banHammer(); <br>
+						}
+					</code> <br>
+					Here we are checking to see if the "admin" veriable is true 
+				<p>
+
+				<h4 class="mt-4">Operators</h4>
+				<p>
+					In JavaScript we have some symbols that help us work with data, they help us compare and check
+					values. <br>
+					Some examples of these are:
+					<ul>
+						<li><code>==</code> - Check if two items are the same or "equal"</li>
+						<li><code>!=</code> - Check if two items are diffrent or "not equal"</li>
+						<li><code>></code> - Checks if a value is greater than</li>
+						<li><code><</code> - Check if two items are less than</li>
+						<li><code>>=</code> - Check if two items are less than</li>
+						<li><code><=</code> - Check if two items are less than</li>
+					</ul>
+					
+					
+					Head over to the file <code>/assets/js/part-3.js</code>
+				<p>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- These are all scripts used by Bootstrap (how I get the nice styles out of the box) -->
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<script src="assets/js/vendor//popper.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+</body>
+
+<!-- Our JS -->
+<script src="assets/js/part-4.js"></script>
+
+</html>
