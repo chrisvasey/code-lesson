@@ -5,7 +5,7 @@
 
 	Let's see how this works, let me know your name:
 */
-var name = "Pete";
+var name = null;
 
 
 
@@ -13,7 +13,7 @@ var name = "Pete";
 	This is an integer (Number), we normally use these when we need to do Maths e.g add, subtract.
 	We will go into this more later but for now, tell me your age:
 */
-var age = 24;
+var age = null;
 
 
 
@@ -23,7 +23,7 @@ var age = 24;
 
 	Let me know if youo are alive
 */
-var alive = false;
+var alive = null;
 
 
 /*
@@ -32,7 +32,7 @@ var alive = false;
 	An array is the plural of hedgehog but for some reason we also use it in programming to describe a collection of items.
 	So in that vain, give me 3 hedgehog names..	
 */
-var hedgehogs = ['Sam', 'Sally', 'James'];
+var hedgehogs = ['', '', ''];
 
 
 //When you refresh the page, go check the browser console.
