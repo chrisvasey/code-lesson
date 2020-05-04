@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Week 2 | Code Squad</title>
+
+		<!-- Bootstrap CSS (how I get the nice styles out of the box) -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		<!-- This is for the fancy code highlighting -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/styles/solarized-dark.min.css" integrity="sha256-piOVUovxzseGND3JabKML1oARsyOc2UngKdAj7vZei4=" crossorigin="anonymous" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.2/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+
+		<!-- Link to our CSS -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+	</head>
+	<body>
+	  <div class="d-flex" id="wrapper">
+
+	    <!-- Sidebar -->
+	    <div class="bg-light border-right" id="sidebar-wrapper">
+	      <div class="list-group list-group-flush">
+				<a href="index.html" class="list-group-item list-group-item-action bg-light">1. Recap stuff</a>
+				<a href="part-2.html" class="list-group-item list-group-item-action bg-light">2. Using functions</a>
+				<a href="part-3.html" class="list-group-item list-group-item-action bg-light">3. Who turned out the lights?</a>
+				<a href="part-4.html" class="list-group-item list-group-item-action bg-light">4. For Loops</a>
+				<a href="part-5.html" class="list-group-item list-group-item-action bg-light">5. Fizz Buzz</a>
+				<a href="part-6.html" class="list-group-item list-group-item-action bg-light">6. Higher or lower</a>
+	      </div>
+	    </div>
+	    <!-- End Sidebar -->
+
+	    <!-- Page Content -->
+	    <div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom header-nav">
+	        	<h3>Week 2 - Part 2: Using functions</h3>
+	      	</nav>
+
+
+	      <div class="container-fluid">
+	        <h4 class="mt-4">Functions are a block of code that we want to run over and over</h4>
+	        <p>
+				A good example of when we would use them is if we wanted a certain block of code to do it's thing every time we pressed a button.
+				<br>
+				<br>
+				Don't worry too much about this but using the onclick="" attribute in HTML we can trigger JavaScript functions, it looks like this:
+	        </p>
+
+	        <img src="assets/img/clicked.png" class="img-fluid" width="60%">
+
+	        <br>
+	        <p>
+	        	Head over to the file <code>/assets/js/part-2.js</code>
+	        </p>
+
+
+			<!-- Red Button -->
+	       	<button class="btn btn-danger" onclick="redBtnClicked()">Do not press</button>
+			
+			<br> <br>
+
+			<!-- Green Button -->
+	       	<button onclick="greenBtnClicked()" class="btn btn-success">Press</button>
+	      
+	      </div>
+	    </div>
+	    <!-- /#page-content-wrapper -->
+
+	  </div>
+	  <!-- /#wrapper -->
+
+		<!-- These are all scripts used by Bootstrap (how I get the nice styles out of the box) -->
+		<script src="assets/js/vendor/jquery.min.js"></script>
+		<script src="assets/js/vendor//popper.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script></body>
+
+		<!-- Our JS -->
+		<script src="assets/js/part-2.js"></script>
+</html>
