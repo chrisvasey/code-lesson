@@ -1,0 +1,15 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug JS in Chrome",
+            "url": "file:///${workspaceFolder}/hangman.html", //If this doesn't work, replace with the path of the HTML file you opened in chrome.
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
