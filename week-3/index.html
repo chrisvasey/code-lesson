@@ -42,22 +42,24 @@
 			<div class="container-fluid">
 				<h4 class="mt-4">What we learned last week</h4>
 				<p>
-					<ul>
-						<li>JavaScript runs in the browser, you can open the browser console using "F12" and run JS on any page: <br>
-							Hotkey in Chrome to open: <br>
-							Mac: <code>Command + Option + I</code> <br>
-							Windows: <code>F12 or Control + Shift + I</code> <br>
-							Try typing: <code>alert("hello");</code></li>
-						<li>You can store data against our own names, these are called "variables": <br>
-							<code>var alive = true;</code> <br>
-							<code>alive; //This should return true</code> 
-						</li>
-						<li>
-							Veriables can be a few different types of data: String, Number, Boolean, Array, Object, Null (nothing)
-						</li>
-						<li>
-							You can do maths with numbers: <br>
-							<pre>
+				<ul>
+					<li>JavaScript runs in the browser, you can open the browser console using "F12" and run JS on any
+						page: <br>
+						Hotkey in Chrome to open: <br>
+						Mac: <code>Command + Option + I</code> <br>
+						Windows: <code>F12 or Control + Shift + I</code> <br>
+						Try typing: <code>alert("hello");</code></li>
+					<li>You can store data against our own names, these are called "variables": <br>
+						<code>var alive = true;</code> <br>
+						<code>alive; //This should return true</code>
+					</li>
+					<li>
+						Veriables can be a few different types of data: String, Number, Boolean, Array, Object, Null
+						(nothing)
+					</li>
+					<li>
+						You can do maths with numbers: <br>
+						<pre>
 							<code class="language-javascript">
 								4 + 4; <br>
 								5 * 9; <br>
@@ -65,11 +67,58 @@
 								veriable1 + veriable2;
 							</code>
 							</pre>
-						</li>
-						<li>
-							Functions - We just started to get into this but we learned that a function is a block of organized, reusable code that is used to perform a task
-						</li>
-					</ul>
+					</li>
+					<li>
+						Functions Reusable code that is used to perform a task
+						<pre>
+								<code class="language-javascript">
+									//This is run when the red button is clicked
+									function redBtnClicked() {
+										alert('Danger!')
+									}
+									
+									//You can also pass variables into a function, name them in the () of the function
+									function logThisWord(word) {
+										console.log('The word you want to log is: '+word);
+									}
+									
+									logThisWord('Moist');
+								</code>
+							</pre>
+					</li>
+					<li>
+						Loops can execute a block of code a number of times, they are handy if you need to run the same
+						code over and over again e.g for counting. <br>
+						There are a few different types of loops which we will go through later but the most common one
+						is the <code>for</code> loop. <br>
+						The syntax looks like this (it can be a bit confusing at first):
+						<pre>
+							<code class="language-javascript">
+								for (statement 1; statement 2; statement 3) {
+								  // code block to be executed
+								}
+							</code>
+						</pre>
+						<code>Statement 1</code> is executed (one time) before the execution of the code block. <br>
+						<code>Statement 2</code> defines the condition for executing the code block. <br>
+						<code>Statement 3</code> is executed (every time) after the code block has been executed. <br>
+						Some examples of real for loops:
+						<pre>
+								<code class="language-javascript">
+									//Counting to 100
+									for (i = 1; i < 101; i++) {
+									  console.log("The number is " + i);
+									}
+									
+									//Looping though an Array
+									var cats = ['Jimmy', 'Jane', 'Sally'];
+									for (var i = 0; i < cats.length; i++) {
+										console.log("The cats name is: "+cats[i])
+									}
+								</code>
+							</pre>
+					</li>
+				</ul>
 				</p>
 			</div>
 		</div>
