@@ -20,18 +20,34 @@
         |
     =========
     You have 7 lives remaining.
+
+    I have also created a veriable that contains the "hangman" art in hangman-ascii.js, you can test what these look like by running:
+    hangmanOutput
+    hangmanOutput[0]
+    hangmanOutput[1]
+    etc
 */
 
-var lives = null;
-var status = null;
+var lives = null; //Amount of lives remaining
+var status = null; //Status of the game
+var word = null; //The word that we are trying to giess
+var displayedWord = null; //The word that is shown to the use e.g "_ _ _ _  _ _ _"
 
 function newGame() {
-    var lives = 7;
-    var stats = "game started"
+    lives = 7;
+    stats = "game started"
+    word = words[Math.floor(Math.random() * words.length)];
+
     console.log('Type guess("X"), where X is the letter you would like to guess.');
 }
 
+function buildDisplayedWord(letter) {
+    return letter;
+}
+
 function guess(letter) {
+    //Rebuild the word to display
+    displayedWord = buildDisplayedWord(letter);
 
     //Output the letter guessed
     console.log(letter);
